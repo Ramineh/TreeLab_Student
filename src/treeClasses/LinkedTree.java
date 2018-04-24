@@ -115,6 +115,7 @@ public class LinkedTree<E> extends AbstractTree<E> implements Cloneable {
 		else { 
 			for (Node<E> childNTD : ntd.children) { 
 				parent.getChildren().add(childNTD);   
+			//	 parent 
 				// Exercise: why can't we use addChild method here????
 				childNTD.setParent(parent); 
 			}	
